@@ -95,7 +95,7 @@ body::before {
   opacity: 0.8;
 }
 .phone p {
-  font-size: 12px;
+  font-size: 11px;
 }
 .phone .user img {
   width: 35px;
@@ -117,8 +117,8 @@ body::before {
 .phone .chat > p {
   color: hsl(276, 55%, 52%);
   background-color: hsl(274deg 37% 93%);
-  margin-bottom: 12px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  padding: 10px 16px 10px 10px;
   max-width: 185px;
   border-radius: 15px 15px 15px 10px;
 }
@@ -130,20 +130,20 @@ body::before {
   width: 50px;
   height: 50px;
   border-radius: 15px;
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px 5px 5px;
 }
 .phone .chat .my-messages p {
   background-color: white;
   margin-bottom: 15px;
-  padding: 15px 0px;
-  max-width: 165px;
-  margin-left: auto;
+  padding: 10px 5px 10px 16px;
+  max-width: 180px;
+  border-radius: 15px 15px 10px 10px;
   color: hsl(271, 15%, 43%);
   box-shadow: 0px 5px 5px hsl(270deg 20% 92%);
 }
 .phone .chat .my-messages p:last-of-type {
   width: fit-content;
-  padding: 15px 5px;
+  margin-left: auto;
 }
 .pricing .price {
   display: flex;
@@ -151,8 +151,8 @@ body::before {
   align-items: center;
   max-width: 220px;
   background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  margin-bottom: 15px;
-  padding: 15px;
+  margin-bottom: 10px;
+  padding: 13px 15px;
   border-radius: 15px 15px 15px 10px;
   color: white;
 }
@@ -181,13 +181,16 @@ body::before {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: 30px;
+  margin-top: 15px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
 }
 .phone .chat form::after {
   content: "\f105";
   position: absolute;
-  right: 10px;
-  bottom: 6px;
+  right: 14px;
+  bottom: 11px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 16px;
@@ -198,8 +201,8 @@ body::before {
   outline: none;
 }
 .phone .chat form input[type="text"] {
-  font-size: 12px;
-  padding-left: 15px;
+  font-size: 11px;
+  padding-left: 20px;
 }
 .phone .chat form input[type="text"]::placeholder {
   color: hsl(206, 6%, 79%);
