@@ -28,10 +28,17 @@ body::before {
   margin: 0px auto 70px;
   position: relative;
   max-width: 300px;
+  transform: scale(0.8);
   box-shadow: 5px 25px 50px hsl(270deg 15% 77%);
 }
 @media (min-width: 991px) {
-  body {
+  body::before {
+    left: -66px;
+    width: 40vw;
+    height: 890px;
+    border-radius: 0px 0px 400px 239px;
+  }
+  main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,12 +47,6 @@ body::before {
   .phone {
     margin: 0px;
     width: 300px;
-  }
-  body::before {
-    left: -66px;
-    width: 40vw;
-    height: 1100px;
-    border-radius: 0px 0px 400px 239px;
   }
 }
 .phone::before {
@@ -65,6 +66,7 @@ body::before {
   border-radius: 25px;
 }
 .phone .user {
+  position: relative;
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-template-rows: 20px 20px;
@@ -72,7 +74,6 @@ body::before {
   padding: 35px 0px 10px 30px;
   border-radius: 25px 25px 5px 5px;
   color: hsl(0, 0%, 100%);
-  position: relative;
   box-shadow: 0px 8px 8px hsl(270deg 20% 92%);
 }
 .phone .user::before {
@@ -180,40 +181,39 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   margin-top: 15px;
   background-color: white;
   padding: 5px;
   border-radius: 20px;
 }
-.phone .chat form::after {
-  content: "\f105";
-  position: absolute;
-  right: 14px;
-  bottom: 11px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 16px;
-  color: white;
-}
 .phone .chat form input {
+  font-size: 11px;
+  padding-left: 20px;
   border: none;
   outline: none;
 }
-.phone .chat form input[type="text"] {
-  font-size: 11px;
-  padding-left: 20px;
-}
-.phone .chat form input[type="text"]::placeholder {
+.phone .chat form input::placeholder {
   color: hsl(206, 6%, 79%);
 }
-input[type="submit"] {
+.phone .chat form button {
   width: 30px;
   height: 30px;
   font-weight: 700;
   cursor: pointer;
   background-color: hsl(271, 36%, 24%);
   border-radius: 50%;
+  border: none;
+  position: relative;
+}
+.phone .chat form button::after {
+  content: "\f105";
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
 }
 .booking {
   padding-left: 30px;
@@ -232,7 +232,7 @@ input[type="submit"] {
 }
 @media (min-width: 991px) {
   .booking {
-    width: 491px;
+    width: 500px;
     text-align: start;
   }
 }
